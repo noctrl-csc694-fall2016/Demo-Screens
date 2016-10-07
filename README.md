@@ -1,5 +1,5 @@
 ## NORTH CENTRAL COLLEGE - MIS 694 - FALL 2016 
-UX DESIGN MOCKUP ##
+UX DESIGN MOCKUP
 ----------
 ####Document Structure ####
 
