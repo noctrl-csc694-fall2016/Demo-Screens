@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Donna Donor | Update Activities</title>
+<title>Donna Donor | Gifts</title>
 
 <!-- Bootstrap -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -66,58 +66,88 @@
   <!-- Content Header -->
   <div class="row">
     <div class="col-sm-4 col-xs-offset-2">
-      <h2>Update Activity</h2>
+      <h2>Surf Gifts</h2>
     </div>
     <div class="col-sm-4 col-xs-offset-2"> &nbsp;</div>
-    <div class="col-sm-4 col-xs-offset-2"><a href="gifts.index.html">See All Gifts For This Activity</a></div>
+    <div class="col-sm-4 col-xs-offset-2"><span class="primary-action-link"><a href="gifts.create.html"><span class="glyphicon glyphicon-plus icon-donna icon-donna-new"></span> New Gift</a></span></div>
+  </div>
+  <!-- Action Header -->
+  <div class="row">
+    <div class="col-sm-4 col-xs-offset-2"> Select a row to view or edit that Gift </div>
+    <div class="col-sm-4 col-xs-offset-2">Surf to: <a href="activities.index.html">All Activities</a> &nbsp; <a href="donors.index.html">All Donors</a></div>
+  </div>
+  <!-- Search Criteria -->
+    <div class="row">
+    <form action="gifts.index.html"  accept-charset="UTF-8" method="post">
+      <div class="form-group row">
+        <div class="col-xs-1 col-xs-offset-2">
+          <label for="gift_activity">Activity </label>
+          <select class="form-control input-sm" name="gift[activity]" id="gift_activity">
+            <option value="0">Select</option>
+            <option value="1" selected="selected">Golf Outing</option>
+            <option value="2">Labor Day Mailer</option>
+            <option value="3">Chinese New Year Benefit</option>
+            <option value="4">Anniversary Dance</option>
+          </select>
+        </div>
+        <div class="col-xs-1">
+          <label for="activity_donor">Donor</label>
+          <select class="form-control input-sm" name="gift[donor]" id="gift_donor">
+            <option value="0">Select</option>
+            <option value="1" selected="selected">John Smith</option>
+            <option value="2">Adam Conover</option>
+            <option value="3">Jim Robinson</option>
+          </select>
+        </div>
+        <div class="col-xs-1 bottom-vertical-alignment">
+          <input type="submit" name="commit" value="Search" class="btn btn-success" />
+        </div>
+      </div>      
+    </form>
   </div>
   <!-- Content -->
   <div class="row">
-    <form action="activities.index.html"  accept-charset="UTF-8" method="post">
-      <div class="form-group">
-        <div class="col-xs-3 col-xs-offset-2">
-          <label for="activity_name">Name </label>
-          <span class="required-field-marker">*</span>
-          <input class="form-control input-sm" type="text" name="activity[name]" id="activity_name" value="Chinese New Year Benefit" />
-        </div>
-        <div class="col-xs-2">
-          <label for="activity_startdate">Start Date</label>
-          <input class="form-control input-sm" type="date" name="activity[startdate]" id="activity_startdate" value="2016-02-06" />
-        </div>
-        <div class="col-xs-2">
-          <label for="activity_enddate">End Date</label>
-          <span class="required-field-marker">*</span>
-          <input class="form-control input-sm" type="date" name="activity[enddate]" id="activity_enddate" value="2016-02-06"/>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-xs-3 col-xs-offset-2">
-          <label for="activity_description">Description</label>
-          <span class="required-field-marker">*</span>
-          <input class="form-control input-sm" type="text" name="activity[description]" id="activity_description" value="Dinner, dancing and auction"/>
-        </div>
-        <div class="col-xs-2">
-          <label for="activity_goal">Goal</label>
-          <span class="required-field-marker">*</span>
-          <input class="form-control input-sm" type="text" name="activity[goal]" id="activity_goal" value="$10,000.00"/>
-        </div>
-        <div class="col-xs-2"> &nbsp; </div>
-      </div>
-      <div class="form-group">
-        <div class="col-xs-7  col-xs-offset-2">
-          <label for="activity_notes">Notes</label>
-          <textarea class="form-control" rows="5" id="activity_notes">Use iPad and cellphones for electronic auction.</textarea>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-xs-1 col-xs-offset-5">
-          <input type="submit" name="commit" value="Update" class="btn btn-success" />
-        </div>
-        <div class="col-xs-1">
-          <input type="submit" name="cancel" value="Cancel" class="btn btn-danger" />
-        </div>
-      </div>
-    </form>
+    <div class="col-xs-8 col-xs-offset-2">
+      <table class="table table-striped table-hover table-bordered table-responsive">
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Donor</th>
+            <th>Date</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pledge Drive</td>
+            <td>William Tee</td>
+            <td>Feb 27, 2016</td>
+            <td>$700.00</td>
+          </tr>
+          <tr>
+            <td>Pledge Drive</td>
+            <td>Mike Dee</td>
+            <td>Feb 14, 2016</td>
+            <td>$4,500.00</td>
+          </tr>
+          <tr>
+            <td><a href="activities.edit.html">Pledge Drive</a></td>
+            <td>Wei Aych</td>
+            <td>Feb 12, 2016</td>
+            <td>$120.00</td>
+          </tr>
+          <tr>
+            <td>Pledge Drive</td>
+            <td>Andy Boubleyew</td>
+            <td>Feb 13, 2016</td>
+            <td>$30.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-1 col-xs-offset-6"> <a href="#">More</a></div>
   </div>
 </div>
 <!-- container --> 

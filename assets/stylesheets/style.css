@@ -106,6 +106,12 @@ body {
 .top-margin-sm{
 	margin-top: 10px;
 }
+
+.bottom-vertical-alignment{
+	display: inline-block;
+    vertical-align: bottom;
+    float: none;
+}
 /*
 	Sources used here and in my HTML:
 	
