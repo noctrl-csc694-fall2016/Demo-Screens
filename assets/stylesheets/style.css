@@ -16,19 +16,31 @@ body {
 	padding-top: 70px;
 	margin-bottom: 60px;		/* margin bottom by footer height */
 }
+
+p {
+	font-size: 1.4em;
+}
+
+/* header/navbar css */
 .navbar-donna {
 	background-color: white;
 	height: 120px;
 	border-bottom: 2px solid #85bb65;
 }
-.navbar-donna-search {
+.navbar-donna-search { 
 	margin-top: 40px;
 }
 .navbar-donna-brand {
 	color: dimgray;
 }
+
+/* home.1 css */
+
+.container-donna-home {
+	padding-top: 120px;		/* home container needs more head room*/
+}
 .container-donna {
-	padding-top: 120px;
+	padding-top: 80px;
 }
 .row-donna-home-icons {
 	padding: 25px;
@@ -55,6 +67,7 @@ body {
 .icon-donna-importexport {
 	color: #bb9b65;
 }
+
 /* Login screen CSS */
 
 .navbar-donna-login {
@@ -69,6 +82,7 @@ body {
 .row-login {
 	padding-top: 100px;
 }
+
 /* Page Action Buttons */
 .primary-action-link {
 	color: #85bb65;
@@ -81,14 +95,60 @@ body {
 	font-weight: bold;
 }
 
+/* Activities */
+.activity-icon {
+	font-size: 20px;
+	color: green;
+}
+.activity-text {
+	font-size: 20px;
+}
+
 /* Reports */
-.report-title{
-	font-size: 1.5em;
-	font-weight: bold;
+.report-row {
+	margin-top: 20px;
+}
+.report-text {
+	color: dimgray;
+}
+.report-title {
+	font-size: 32px;
 }
 .report-description{
-	font-size: 1.5em;
+	font-size: 24px;
+	font-style: italic;
+	padding-left: 10px;
 }
+.report-icon {
+	font-size: 28px;
+	padding-right: 12px;
+	color: dimgray;
+}
+
+/* Import-export css - just use report css when possible */
+.export-header {
+	margin-top: 40px;
+}
+.import-color {
+	color: #9b65bb;		/* import is purple */
+}
+.import-icon {
+	font-size: 28px;
+	padding-right: 12px;
+}
+.export-color {
+	color: #bb9b65;		/* export is funky copper */
+}
+.export-icon {
+	font-size: 28px;
+	padding-right: 12px;
+}
+
+/* Hyper surf css*/
+.hyper-row {
+	padding-top: 20px;
+}
+
 
 /* Footer CSS */
 .footer {
@@ -112,6 +172,8 @@ body {
     vertical-align: bottom;
     float: none;
 }
+
+
 /*
 	Sources used here and in my HTML:
 	

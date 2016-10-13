@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Donna Donor | Create Activities</title>
+<title>Donna Donor | Surf</title>
 
 <!-- Bootstrap -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
 						aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class= "navbar-brand" href="home.html"><img src="assets/images/logo_donna.jpg" height="120px"></a>
+      <a class= "navbar-brand" href="home1.html"><img src="assets/images/logo_donna.jpg" height="120px"></a>
       <div class="navbar-brand navbar-donna-brand" href="#">
         <h1>Donna<br>
           Donor</h1>
@@ -42,12 +42,12 @@
 											aria-expanded="false">Account <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="login1.html">Logout</a></li>
           </ul>
         </li>
       </ul>
       <div class="col-sm-3 col-md-3 pull-right navbar-donna-search">
-        <form class="navbar-form" role="search" action="surf.index.html">
+        <form class="navbar-form" role="search" action="hyper1.html">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Hyper surf" name="srch-term" id="srch-term">
             <div class="input-group-btn">
@@ -63,58 +63,59 @@
 
 <!-- 2. Main page content -->
 <div class="container-fluid container-donna"> 
+
   <!-- Content Header -->
-  <div class="row">
-    <div class="col-sm-4 col-xs-offset-2">
-      <h2>New Activity</h2>
-    </div>
-  </div>
+	<div class="row">
+	  <div class="col-sm-10 col-xs-offset-1">
+	  	<div class="page-header">
+	  		<h1>Hyper Surf <small>&nbsp; The results of your hyper surf are below. 
+	  			Select any row to surf to the listed Activity, Donor or Gift.</small></h1>
+	  	</div>
+	  </div>
+	</div>   <!-- row -->
+
+
   <!-- Content -->
   <div class="row">
-    <form action="activities.index.html"  accept-charset="UTF-8" method="post">
-      <div class="form-group">
-        <div class="col-xs-3 col-xs-offset-2">
-          <label for="activity_name">Name </label><span class="required-field-marker">*</span>
-          <input class="form-control input-sm" type="text" name="activity[name]" id="activity_name" />
-        </div>
-        <div class="col-xs-2">
-          <label for="activity_startdate">Start Date</label>
-          <input class="form-control input-sm" type="date" name="activity[startdate]" id="activity_startdate" />
-        </div>
-        <div class="col-xs-2">
-          <label for="activity_enddate">End Date</label>
-          <span class="required-field-marker">*</span>
-          <input class="form-control input-sm" type="date" name="activity[enddate]" id="activity_enddate" />
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-xs-3 col-xs-offset-2">
-          <label for="activity_description">Description</label>
-          <span class="required-field-marker">*</span>
-          <input class="form-control input-sm" type="text" name="activity[description]" id="activity_description" />
-        </div>
-        <div class="col-xs-2">
-          <label for="activity_goal">Goal</label>
-          <span class="required-field-marker">*</span>
-          <input class="form-control input-sm" type="text" name="activity[goal]" id="activity_goal" />
-        </div>
-        <div class="col-xs-2"> &nbsp; </div>
-      </div>
-      <div class="form-group">
-        <div class="col-xs-7  col-xs-offset-2">
-          <label for="activity_notes">Notes</label>
-          <textarea class="form-control" rows="5" id="activity_notes"></textarea>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-xs-1 col-xs-offset-5">
-          <input type="submit" name="commit" value="Create Activity" class="btn btn-success" />
-        </div>
-        <div class="col-xs-1">
-          <input type="reset" name="cancel" value="Cancel" class="btn btn-danger" />
-        </div>
-      </div>
-    </form>
+    <div class="col-sm-8 col-xs-offset-2">
+      <h2>Hyper Surf results <small> &nbsp; &nbsp; for "Halloween"</small></h2>
+    </div>
+  </div>
+
+  <div class="row hyper-row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <table class="table table-striped table-hover table-bordered table-responsive">
+        <thead>
+          <tr>
+            <th>Type</th>
+						<th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-link="#">
+            <td>Activity</td>
+						<td>Halloween Open House</td>
+            <td>Fund-raiser at haunted house for...</td>
+          </tr>
+          <tr data-link="#">
+            <td>Donor</td>
+          	<td>Mitch Rapp</td>
+            <td>I first met Mitch at Halloween for drinks and...</td>
+          </tr>
+          <tr data-link="#">
+            <td>Gift</td>
+          	<td>by Vince Flynn</td>
+            <td>... volunteered time for Halloween decorations...</td>
+          </tr>
+          <tr data-link="#">
+            <td>Donor</td>
+          	<td>Jane Smiley</td>
+            <td>a Halloween party attended by many of the same...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 <!-- container --> 
@@ -134,5 +135,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- This Javascript function enables hyperlink selection of an entire row -->
+<!-- My source for this is my class last term, CSC 495: -->
+<!-- https://github.com/noctrl-csc495-spring2016/Odyssey495/blob/master/app/views/layouts/_footer.html.erb -->
+<script>
+$("tr[data-link]").click(function() {
+  window.location = this.dataset.link
+})
+</script>
 </body>
 </html>

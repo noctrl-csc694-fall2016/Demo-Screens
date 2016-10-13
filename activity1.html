@@ -24,13 +24,14 @@
 
 <body>
 
+
 <!-- 1. Navbar fixed at top -->
 <nav class="navbar navbar-fixed-top navbar-donna">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
 						aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class= "navbar-brand" href="home.html"><img src="assets/images/logo_donna.jpg" height="120px"></a>
+      <a class= "navbar-brand" href="home1.html"><img src="assets/images/logo_donna.jpg" height="120px"></a>
       <div class="navbar-brand navbar-donna-brand" href="#">
         <h1>Donna<br>
           Donor</h1>
@@ -42,12 +43,12 @@
 											aria-expanded="false">Account <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="login1.html">Logout</a></li>
           </ul>
         </li>
       </ul>
       <div class="col-sm-3 col-md-3 pull-right navbar-donna-search">
-        <form class="navbar-form" role="search" action="surf.index.html">
+        <form class="navbar-form" role="search" action="hyper1.html">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Hyper surf" name="srch-term" id="srch-term">
             <div class="input-group-btn">
@@ -61,39 +62,92 @@
   </div>
 </nav>
 
+
 <!-- 2. Main page content -->
 <div class="container-fluid container-donna"> 
-  <!-- Content Header -->
+
+	<!-- Content Header -->
+	<div class="row">
+	  <div class="col-sm-10 col-xs-offset-1">
+	  	<div class="page-header">
+	  		<h1>Surf Activities <small>&nbsp; View all Activities.
+	  		Use Surf Options to filter and sort your results. </small></h1>
+	  	</div>
+	  </div>
+	</div>   <!-- row -->
+
+  <!-- Action: New Activity -->
   <div class="row">
-    <div class="col-sm-4 col-xs-offset-2">
-      <h2>Import</h2>
-    </div>
-    <div class="col-sm-10 col-xs-offset-2"> 
-      This page shows all ways to: <br />
-      <ol>
-      	<li>Import data into Donna</li>
-        <li>Export Data out of donna</li>
-      </ol>
+    <div class="col-sm-4 col-xs-offset-7 text-right">
+    	<span class="primary-action-link">
+    		<a href="activity2.html">
+    			<span class="glyphicon glyphicon-plus activity-icon"></span><span class="activity-text">New Activity</span>
+    		</a>
+    	</span>
     </div>
   </div>
+
+  <!-- Action: Surf elsewhere -->
+  <div class="row">
+  	<div class="col-sm-6 col-xs-offset-1">
+  		<p>
+  			Select row to surf that Activity
+  		</p>
+  	</div>
+    <div class="col-sm-4 text-right">
+    	<p>
+    		Switch to: <a href="donor1.html">Surf Donors</a> ~ <a href="gift1.html">Surf Gifts</a>
+    	</p>
+    </div>
+  </div>  
+
   <!-- Content -->
-  <div class="row top-margin-sm">
-    <div class="col-xs-5 col-xs-offset-2"> <span class="	glyphicon glyphicon-leaf icon-donna icon-donna-new"></span><span class="report-title">In Kind Donations</span> <span class="report-description">- Read non-cash, in kind donations</span> </div>
-  </div>
-  <div class="row top-margin-sm">
-    <div class="col-xs-5 col-xs-offset-2"> <span class="	glyphicon glyphicon-download icon-donna icon-donna-new"></span><span class="report-title">RE Import</span> <span class="report-description">- Donation data from Raiser's Edge</span> </div>
-  </div>
   <div class="row">
-    <div class="col-sm-4 col-xs-offset-2">
-      <h2>Export</h2>
+    <div class="col-xs-10 col-xs-offset-1">
+      <table class="table table-striped table-hover table-bordered table-responsive">
+        <thead>
+          <tr data-link="#">
+            <th>Name</th>
+            <th>Date</th>
+            <th>Donations</th>
+            <th>Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-link="#">
+            <td>Golf Outing</td>
+            <td>Sep 9, 2016</td>
+            <td>$70,504.00</td>
+            <td>88%</td>
+          </tr>
+          <tr data-link="#">
+            <td>Labor Day Mailer</td>
+            <td>Aug 20, 2016</td>
+            <td>$4,500.00</td>
+            <td>110%</td>
+          </tr>
+          <tr data-link="activity3.html">
+            <td>Chinese New Year Benefit</td>
+            <td>Mar 11, 2016</td>
+            <td>$12,000.00</td>
+            <td>90%</td>
+          </tr>
+          <tr data-link="#">
+            <td>Anniversary Dance</td>
+            <td>Feb 13, 2016</td>
+            <td>$3,200.00</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   <div class="row">
-  <div class="col-xs-5 col-xs-offset-2"> <span class="glyphicon glyphicon-download-alt icon-donna icon-donna-new"></span><span class="report-title">Donor Dump</span> <span class="report-description">- Block data dump of donor info</span> </div>
-  </div>
+    <div class="col-xs-10 col-xs-offset-1 text-center"> <a href="#">More...</a></div>
   </div>
 </div>
 <!-- container --> 
+
 
 <!-- 3. Footer at bottom... it's sticky -->
 <footer class="footer">
@@ -106,9 +160,20 @@
   </div>
 </footer>
 
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- This Javascript function enables hyperlink selection of an entire row -->
+<!-- My source for this is my class last term, CSC 495: -->
+<!-- https://github.com/noctrl-csc495-spring2016/Odyssey495/blob/master/app/views/layouts/_footer.html.erb -->
+<script>
+$("tr[data-link]").click(function() {
+  window.location = this.dataset.link
+})
+</script>
+
 </body>
 </html>
