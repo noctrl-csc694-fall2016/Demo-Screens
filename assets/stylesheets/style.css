@@ -12,6 +12,12 @@
 		purple = #9b65bb, rgb(155,101,187)
 		copper = #bb9b65, rgb(187,155,101)
 */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
 	padding-top: 70px;
 	margin-bottom: 60px;		/* margin bottom by footer height */
