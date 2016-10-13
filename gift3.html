@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Donna Donor | Surf</title>
+<title>Donna Donor | Update Gift</title>
 
 <!-- Bootstrap -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
 						aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class= "navbar-brand" href="home.html"><img src="assets/images/logo_donna.jpg" height="120px"></a>
+      <a class= "navbar-brand" href="home1.html"><img src="assets/images/logo_donna.jpg" height="120px"></a>
       <div class="navbar-brand navbar-donna-brand" href="#">
         <h1>Donna<br>
           Donor</h1>
@@ -42,12 +42,12 @@
 											aria-expanded="false">Account <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="login1.html">Logout</a></li>
           </ul>
         </li>
       </ul>
       <div class="col-sm-3 col-md-3 pull-right navbar-donna-search">
-        <form class="navbar-form" role="search" action="surf.index.html">
+        <form class="navbar-form" role="search" action="hyper1.html">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Hyper surf" name="srch-term" id="srch-term">
             <div class="input-group-btn">
@@ -61,40 +61,84 @@
   </div>
 </nav>
 
+
 <!-- 2. Main page content -->
 <div class="container-fluid container-donna"> 
-  <!-- Content Header -->
-  <div class="row">
-    <div class="col-sm-4 col-xs-offset-2">
-      <h2>Surf</h2>
-    </div>
-  </div>
+
+	<!-- Content Header -->
+	<div class="row">
+	  <div class="col-sm-10 col-xs-offset-1">
+	  	<div class="page-header">
+	  		<h1>Edit Gift <small>&nbsp; Update this Gift </small></h1>
+	  	</div>
+	  </div>
+	</div>   <!-- row -->
+
   <!-- Content -->
   <div class="row">
-    <div class="col-xs-8 col-xs-offset-2">
-      <table class="table table-striped table-hover table-bordered table-responsive">
-        <thead>
-          <tr>
-            <th>Content ID</th>
-			<th>Title</th>
-            <th>Type</th>
-          </tr>
-        </thead>
-        <tbody>          
-          <tr>
-            <td><a href="activities.edit.html">1</a></td>
-			<td>Anniversary Dance</td>
-            <td>Activity</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-1 col-xs-offset-6"> <a href="#">More</a></div>
-  </div>
-</div>
-<!-- container --> 
+    <form action="gift1.html"  accept-charset="UTF-8" method="post">
+      <div class="form-group row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <label for="gift_activity">Activity </label>
+          <select class="form-control input-sm" name="gift[activity]" id="gift_activity">
+            <option value="0">Select</option>
+            <option value="1" selected="selected">Pledge Drive</option>
+            <option value="2">Labor Day Mailer</option>
+            <option value="3">Chinese New Year Benefit</option>
+            <option value="4">Anniversary Dance</option>
+          </select>
+        </div>
+        <div class="col-xs-4">
+          <label for="activity_donor">Donor</label>
+          <select class="form-control input-sm" name="gift[donor]" id="gift_donor">
+            <option value="0">Select</option>
+            <option value="1" selected="selected">Charlie Chan</option>
+            <option value="2">Adam Conover</option>
+            <option value="3">Jim Robinson</option>
+          </select>
+        </div>
+      </div>   <!-- row -->
+
+      <div class="row form-group">
+        <div class="col-xs-2 col-xs-offset-2">
+          <label for="activity_type">Type</label>
+          <select class="form-control input-sm" name="gift[type]" id="gift_type">
+            <option value="0">Select</option>
+            <option value="1">Cash</option>
+            <option value="2" selected="selected">Check</option>
+            <option value="3">Credit Card</option>
+            <option value="4">Item</option>
+            <option value="5">Other</option>
+          </select>
+        </div>
+        <div class="col-xs-2 ">
+          <label for="activity_amount">Amount</label>
+          <input name="activity[amount]" type="text" class="form-control input-sm" id="activity_amount" value="$120.00" />
+        </div>
+        <div class="col-xs-2">
+          <label for="activity_date">Date</label>
+          <input name="activity[date]" type="date" class="form-control input-sm" id="activity_date" value="2016-02-12" />
+        </div>
+      </div>   <!-- row -->
+
+      <div class="row form-group">
+        <div class="col-xs-8  col-xs-offset-2">
+          <label for="activity_notes">Notes</label>
+          <textarea class="form-control" rows="5" id="activity_notes">Annual Gift on behalf of Acme Corporation</textarea>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-xs-8 col-xs-offset-1 text-center">
+          <input type="submit" name="commit" value="Update Gift" class="btn btn-success" />
+        	&nbsp;
+          <input type="reset" name="cancel" value="Cancel" class="btn btn-danger" />
+        </div>
+      </div>   <!-- row -->
+
+    </form>
+  </div>   <!-- row -->
+</div>   <!-- container --> 
 
 <!-- 3. Footer at bottom... it's sticky -->
 <footer class="footer">

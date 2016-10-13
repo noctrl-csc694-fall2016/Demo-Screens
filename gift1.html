@@ -30,7 +30,7 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
 						aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class= "navbar-brand" href="home.html"><img src="assets/images/logo_donna.jpg" height="120px"></a>
+      <a class= "navbar-brand" href="home1.html"><img src="assets/images/logo_donna.jpg" height="120px"></a>
       <div class="navbar-brand navbar-donna-brand" href="#">
         <h1>Donna<br>
           Donor</h1>
@@ -42,7 +42,7 @@
 											aria-expanded="false">Account <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="login1.html">Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -62,55 +62,80 @@
 </nav>
 
 <!-- 2. Main page content -->
-<div class="container-fluid container-donna"> 
+<div class="container-fluid container-donna">
+
   <!-- Content Header -->
   <div class="row">
-    <div class="col-sm-4 col-xs-offset-2">
-      <h2>Surf Gifts</h2>
+    <div class="col-sm-10 col-xs-offset-1">
+    	<div class="page-header">
+    		<h1>Surf Gifts <small>&nbsp; View all Gifts. There's a lot here.</small></h1>
+    	</div>
     </div>
-    <div class="col-sm-4 col-xs-offset-2"> &nbsp;</div>
-    <div class="col-sm-4 col-xs-offset-2"><span class="primary-action-link"><a href="gifts.create.html"><span class="glyphicon glyphicon-plus icon-donna icon-donna-new"></span> New Gift</a></span></div>
-  </div>
-  <!-- Action Header -->
-  <div class="row">
-    <div class="col-sm-4 col-xs-offset-2"> Select a row to view or edit that Gift </div>
-    <div class="col-sm-4 col-xs-offset-2">Surf to: <a href="activities.index.html">All Activities</a> &nbsp; <a href="donors.index.html">All Donors</a></div>
-  </div>
-  <!-- Search Criteria -->
-    <div class="row">
-    <form action="gifts.index.html"  accept-charset="UTF-8" method="post">
-      <div class="form-group row">
-        <div class="col-xs-1 col-xs-offset-2">
-          <label for="gift_activity">Activity </label>
-          <select class="form-control input-sm" name="gift[activity]" id="gift_activity">
-            <option value="0">Select</option>
-            <option value="1" selected="selected">Golf Outing</option>
-            <option value="2">Labor Day Mailer</option>
-            <option value="3">Chinese New Year Benefit</option>
-            <option value="4">Anniversary Dance</option>
-          </select>
-        </div>
-        <div class="col-xs-1">
-          <label for="activity_donor">Donor</label>
-          <select class="form-control input-sm" name="gift[donor]" id="gift_donor">
-            <option value="0">Select</option>
-            <option value="1" selected="selected">John Smith</option>
-            <option value="2">Adam Conover</option>
-            <option value="3">Jim Robinson</option>
-          </select>
-        </div>
-        <div class="col-xs-1 bottom-vertical-alignment">
-          <input type="submit" name="commit" value="Search" class="btn btn-success" />
-        </div>
-      </div>      
-    </form>
-  </div>
+  </div>   <!-- row -->
+
+	<!-- Search Criteria -->
+	<div class="row">
+	  <form action="#"  accept-charset="UTF-8" method="post">
+	    <div class="form-group row">
+	      <div class="col-xs-2 col-xs-offset-3 ">
+	        <label for="gift_activity">Activity </label>
+	        <select class="form-control input-sm" name="gift[activity]" id="gift_activity">
+	          <option value="0">Select</option>
+	          <option value="1" selected="selected">Pledge Drive</option>
+	          <option value="2">Labor Day Mailer</option>
+	          <option value="3">Chinese New Year Benefit</option>
+	          <option value="4">Anniversary Dance</option>
+	        </select>
+	      </div>
+	      <div class="col-xs-2">
+	        <label for="activity_donor">Donor</label>
+	        <select class="form-control input-sm" name="gift[donor]" id="gift_donor">
+	          <option value="0">Select</option>
+	          <option value="1" >John Smith</option>
+	          <option value="2">Adam Conover</option>
+	          <option value="3">Jim Robinson</option>
+	        </select>
+	      </div>
+	      <div class="col-xs-2 bottom-vertical-alignment">
+	      	<br>
+	        <input type="submit" name="commit" value="Filter Gifts" class="btn btn-info" />
+	      </div>
+	    </div>      
+	  </form>
+	</div>
+
+	<!-- Action: New Donor -->
+	<div class="row">
+	  <div class="col-sm-4 col-xs-offset-7 text-right">
+	  	<span class="primary-action-link">
+	  		<a href="new1.html">
+	  			<span class="glyphicon glyphicon-plus activity-icon"></span><span class="activity-text">New Gift</span>
+	  		</a>
+	  	</span>
+	  </div>
+	</div>   <!-- row -->
+	
+	<!-- Action: Surf elsewhere -->
+	<div class="row">
+		<br>
+		<div class="col-sm-6 col-xs-offset-1">
+			<p>
+				Select row to surf that Gift
+			</p>
+		</div>
+	  <div class="col-sm-4 text-right">
+	  	<p>
+	  		Switch to: <a href="activity1.html">Surf Activities</a> ~ <a href="donor1.html">Surf Donors</a>
+	  	</p>
+	  </div>
+	</div>   <!-- row -->
+
   <!-- Content -->
   <div class="row">
-    <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-xs-10 col-xs-offset-1">
       <table class="table table-striped table-hover table-bordered table-responsive">
         <thead>
-          <tr>
+          <tr data-link="#">
             <th>Activity</th>
             <th>Donor</th>
             <th>Date</th>
@@ -118,25 +143,25 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr data-link="#">
             <td>Pledge Drive</td>
             <td>William Tee</td>
             <td>Feb 27, 2016</td>
             <td>$700.00</td>
           </tr>
-          <tr>
+          <tr data-link="#">
             <td>Pledge Drive</td>
             <td>Mike Dee</td>
             <td>Feb 14, 2016</td>
             <td>$4,500.00</td>
           </tr>
-          <tr>
-            <td><a href="gifts.edit.html">Pledge Drive</a></td>
-            <td>Wei Aych</td>
+          <tr data-link="gift3.html">
+            <td>Pledge Drive</td>
+            <td>Charlie Chan</td>
             <td>Feb 12, 2016</td>
             <td>$120.00</td>
           </tr>
-          <tr>
+          <tr data-link="#">
             <td>Pledge Drive</td>
             <td>Andy Boubleyew</td>
             <td>Feb 13, 2016</td>
@@ -147,7 +172,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-1 col-xs-offset-6"> <a href="#">More</a></div>
+    <div class="col-xs-10 col-xs-offset-1 text-center"> <a href="#">More...</a></div>
   </div>
 </div>
 <!-- container --> 
@@ -167,5 +192,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- This Javascript function enables hyperlink selection of an entire row -->
+<!-- My source for this is my class last term, CSC 495: -->
+<!-- https://github.com/noctrl-csc495-spring2016/Odyssey495/blob/master/app/views/layouts/_footer.html.erb -->
+<script>
+$("tr[data-link]").click(function() {
+  window.location = this.dataset.link
+})
+</script>
+
 </body>
 </html>
