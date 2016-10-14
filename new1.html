@@ -61,6 +61,7 @@
   </div>
 </nav>
 
+
 <!-- 2. Main page content -->
 <div class="container-fluid container-donna"> 
 
@@ -76,115 +77,134 @@
   <!-- Content -->
   <div class="row">
     <form action="gift1.html"  accept-charset="UTF-8" method="post">
-      <div class="form-group row">
-        <div class="col-xs-3 col-xs-offset-2">
-          <label for="gift_activity">Activity </label>
-          <select class="form-control input-sm" name="gift[activity]" id="gift_activity">
-            <option value="0">General</option>
-            <option value="1">Golf Outing</option>
-            <option value="2">Labor Day Mailer</option>
-            <option value="3">Chinese New Year Benefit</option>
-            <option value="4">Anniversary Dance</option>
-          </select>
-        </div>
+      <div class="row">
+	      <div class="form-group">
+	        <div class="col-xs-3 col-xs-offset-2">
+	          <label for="gift_activity">Activity </label>
+	          <select class="form-control input-sm" name="gift[activity]" id="gift_activity">
+	            <option value="0">General</option>
+	            <option value="1">Golf Outing</option>
+	            <option value="2">Labor Day Mailer</option>
+	            <option value="3">Chinese New Year Benefit</option>
+	            <option value="4">Anniversary Dance</option>
+	          </select>
+	          <br>
+	        </div>
+				</div>
       </div>
 
-			<div class="form-group row">
-				<div class="col-xs-8 col-xs-offset-2">
-					<div class="panel-group" id="accordion">
-					  <div class="panel panel-default">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-					          <span class="glyphicon glyphicon-minus"></span>
-					          One Gift
-					        </a>
-					      </h4>
-					    </div>   <!-- panel-heading -->
-					    <div id="collapseOne" class="panel-collapse collapse in">
-					      <div class="panel-body">
-					      	<div class="form-group row">
-					      	  <div class="col-xs-3">
-					      	    <label for="activity_donor">Donor</label>
-					      	    <select class="form-control input-sm" name="gift[donor]" id="gift_donor">
-					      	      <option value="0">Select</option>
-					      	      <option value="1">John Smith</option>
-					      	      <option value="2">Adam Conover</option>
-					      	      <option value="3">Jim Robinson</option>
-					      	    </select>
-					      	  </div>
-					      	</div>
-					      	<div class="form-group row">
-					      	  <div class="col-xs-2">
-					      	    <label for="activity_type">Type</label>
-					      	    <select class="form-control input-sm" name="gift[type]" id="gift_type">
-					      	      <option value="0">Select</option>
-					      	      <option value="1">Cash</option>
-					      	      <option value="2">Check</option>
-					      	      <option value="3">Credit Card</option>
-					      	      <option value="4">Item</option>
-					      	      <option value="5">Other</option>
-					      	    </select>
-					      	  </div>
-					      	  <div class="col-xs-2 ">
-					      	    <label for="activity_amount">Amount</label>
-					      	    <input class="form-control input-sm" type="text" name="activity[amount]" id="activity_amount" />
-					      	  </div>
-					      	  <div class="col-xs-3">
-					      	    <label for="activity_date">Date</label>
-					      	    <input class="form-control input-sm" type="date" name="activity[date]" id="activity_date" />
-					      	  </div>
-					      	</div>
-					      	<div class="form-group row">
-					      	  <div class="col-xs-7 ">
-					      	    <label for="activity_notes">Notes</label>
-					      	    <textarea class="form-control" rows="5" id="activity_notes"></textarea>
-					      	  </div>
-					      	</div>
-					      	<div class="form-group">
-					      	  <div class="col-xs-2 col-xs-offset-2">
-					      	    <input type="submit" name="commit" value="Create Gift" class="btn btn-success" />
-					      	  </div>
-					      	  <div class="col-xs-2">
-					      	    <input type="reset" name="cancel" value="Cancel" class="btn btn-danger" />
-					      	  </div>
-					      	</div>
-					      </div>
-					    </div>
-					  </div>
-					  <div class="panel panel-default">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-					          <span class="glyphicon glyphicon-plus"></span>
-					          Many Gifts
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseTwo" class="panel-collapse collapse">
-					      <div class="panel-body">
-					      	<p>
-						        Coming soon... the ability to add multiple gifts in one click.
-						        <br><br>
-						      </p>
-						      <div class="form-group">
-						        <div class="col-xs-2 col-xs-offset-3">
-						          <input type="submit" name="commit" value="Create Gifts" class="btn btn-success" />
-						        </div>
-						        <div class="col-xs-2">
-						          <input type="reset" name="cancel" value="Cancel" class="btn btn-danger" />
-						        </div>
+			<div class="row">
+				<div class="form-group">
+					<div class="col-xs-8 col-xs-offset-2">
+						<div class="panel-group" id="accordion">
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						          <span class="glyphicon glyphicon-minus"></span>
+						          One Gift
+						        </a>
+						      </h4>
+						    </div>   <!-- panel-heading -->
+						    <div id="collapseOne" class="panel-collapse collapse in">
+						      <div class="panel-body">
+
+						      	<div class="row">
+							      	<div class="form-group">
+							      	  <div class="col-xs-4">
+							      	    <label for="activity_donor">Donor</label>
+							      	    <select class="form-control input-sm" name="gift[donor]" id="gift_donor">
+							      	      <option value="0">Select</option>
+							      	      <option value="1">John Smith</option>
+							      	      <option value="2">Adam Conover</option>
+							      	      <option value="3">Jim Robinson</option>
+							      	    </select>
+							      	  </div>
+							      	</div>   <!-- form-group -->
+						      	</div>   <!-- row -->
+
+						      	<div class="row">
+							      	<div class="form-group">
+							      	  <div class="col-xs-3">
+							      	    <label for="activity_type">Type</label>
+							      	    <select class="form-control input-sm" name="gift[type]" id="gift_type">
+							      	      <option value="0">Select</option>
+							      	      <option value="1">Cash</option>
+							      	      <option value="2">Check</option>
+							      	      <option value="3">Credit Card</option>
+							      	      <option value="4">Item</option>
+							      	      <option value="5">Other</option>
+							      	    </select>
+							      	  </div>
+							      	  <div class="col-xs-3">
+							      	    <label for="activity_amount">Amount</label>
+							      	    <input class="form-control input-sm" type="text" name="activity[amount]" id="activity_amount" />
+							      	  </div>
+							      	  <div class="col-xs-3">
+							      	    <label for="activity_date">Date</label>
+							      	    <input class="form-control input-sm" type="date" name="activity[date]" id="activity_date" />
+							      	  </div>
+							      	</div>   <!-- form-group -->
+						      	</div>   <!-- row -->
+
+						      	<div class="row">
+							      	<div class="form-group">
+							      	  <div class="col-xs-10 ">
+							      	    <label for="activity_notes">Notes</label>
+							      	    <textarea class="form-control" rows="5" id="activity_notes"></textarea>
+							      	  </div>
+							      	</div>   <!-- form-group -->
+						      	</div>   <!-- row -->
+
+										<div class="row">
+							      	<div class="form-group">
+							      	  <div class="col-xs-10 text-center">
+							      	  	<br>
+							      	    <input type="submit" name="commit" value="Create Gift" class="btn btn-success" />
+							      	  	&nbsp;
+							      	    <input type="reset" name="cancel" value="Cancel" class="btn btn-danger" />
+							      	  </div>
+							      	</div>   <!-- form-group -->
+										</div>   <!-- row -->
+
+						      </div>   <!-- panel-body -->
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+						          <span class="glyphicon glyphicon-plus"></span>
+						          Many Gifts
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseTwo" class="panel-collapse collapse">
+						      <div class="panel-body">
+						      	<p>
+							        Coming soon... the ability to add multiple gifts in one click.
+							        <br><br>
+							      </p>
+							      <div class="row">
+								      <div class="form-group">
+								        <div class="col-xs-10 text-center">
+								          <input type="submit" name="commit" value="Create Gifts" class="btn btn-success" />
+								        	&nbsp;
+								          <input type="reset" name="cancel" value="Cancel" class="btn btn-danger" />
+								        </div>
+								      </div>
+							      </div>
 						      </div>
-					      </div>
-					    </div>
-					  </div>
+						    </div>
+						  </div>
+						</div>
 					</div>
 				</div>
-			</div>
+			</div>   <!-- row -->
     </form>
-  </div>
-</div>
-<!-- container --> 
+  </div>   <!-- row -->
+</div>   <!-- container --> 
+
 
 <!-- 3. Footer at bottom... it's sticky -->
 <footer class="footer">
